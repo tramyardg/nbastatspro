@@ -1,0 +1,21 @@
+- Player profile pic -
+    http://stats.nba.com/media/players/230x185/201566.png
+
+- Get player's id here -
+    http://api.suredbits.com/nba/v0/players/lastName/firstName
+    http://stats.nba.com/stats/commonplayerinfo?LeagueID=00&PlayerID=201566&SeasonType=Regular+Season
+
+- total points season --
+    http://stats.nba.com/stats/leagueLeaders?LeagueID=00&PerMode=Totals&Scope=S&Season=2016-17&SeasonType=Regular+Season&StatCategory=PTS
+
+- bio -
+    http://api.suredbits.com/nba/v0/players
+
+- season leaders not all players -
+    http://stats.nba.com/js/data/widgets/home_season.json
+
+- team logo -
+	http://stats.nba.com/media/img/teams/logos/GSW_logo.svg
+
+- specific
+	http://stats.nba.com/js/data/widgets/players_landing_inner.json
