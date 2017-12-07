@@ -1,40 +1,39 @@
-var util = new CommonUtil();
-var RunActions = (function () {
-    var runBtn = {},
-        runPassword = {},
-        ajaxReq = {};
+let RunActions = (function () {
+    let runBtn = null
+    let runPassword = null
+    let ajaxReq = null
     return {
         init: function () {
-            runBtn.btn = $("#scrap-player-data");
-            runPassword = null;
-            ajaxReq = null;
-            this.bindRunActions();
+            runBtn = $('#scrap-player-data')
+            runPassword = null
+            ajaxReq = null
+            this.bindRunActions()
         },
         bindRunActions: function () {
-            runBtn.btn.click(function () {
-                util.$loading.show();
-                var ele = $(this);
-                var $inputGroup = ele.parent().parent().parent().parent();
-                runPassword = $inputGroup.children().find("#run-password").val();
+            let util = new CommonUtil()
+            runBtn.click(function () {
+                util.$loading.show()
+                let ele = $(this)
+                let $inputGroup = ele.parent().parent().parent().parent()
+                runPassword = $inputGroup.children().find('#run-password').val()
                 ajaxReq = $.ajax({
-                    url: "../nbastatspro/model/update_stats.php?runCode=" + runPassword.toString(),
+                    url: 'model/update_stats.php?runCode=' + runPassword.toString(),
                     success: function (response) {
                         if (response.length > 1 && response.length < 40) {
-                            util.$warning.empty();
-                            util.$warning.append(util.alertMessage("success", "Done downloading data."));
-                            console.log("done");
+                            util.$warning.empty()
+                            util.$warning.append(util.alertMessage('success', 'Done downloading data.'))
+                            console.log('done')
                         } else {
-                            util.$warning.empty();
-                            util.$warning.append(util.alertMessage("warning", "There must be an error."));
-                            console.log("error");
+                            util.$warning.empty()
+                            util.$warning.append(util.alertMessage('warning', 'There must be an error.'))
+                            console.log('error')
                         }
                     }
-                });
+                })
                 ajaxReq.done(function () {
-                    util.$loading.hide();
-                });
-
-            });
+                    util.$loading.hide()
+                })
+            })
         }
-    };
-})();
+    }
+})()
