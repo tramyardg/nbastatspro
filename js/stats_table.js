@@ -1,4 +1,3 @@
-// let util = new CommonUtil();
 let StatsTable = (function () {
     let table = null
     let fnShowTableData = null
@@ -23,7 +22,12 @@ let StatsTable = (function () {
                 'pageLength': 5,
                 'lengthChange': false,
                 searching: false,
+                "scrollX": true,
                 'displayStart': 1,
+                "columnDefs": [{
+                    "targets": [0, 4, 5],
+                    "visible": false
+                }],
                 'columns': [
                     {'title': 'PLAYER ID'},
                     {'title': 'RANK'},
