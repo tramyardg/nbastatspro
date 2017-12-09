@@ -3,7 +3,7 @@ let StatsTable = (function () {
     let fnShowTableData = null
     let fnAddColHeaderTooltip = null
     return {
-        setUtil: function(aUtil) {
+        setUtil: function (aUtil) {
             StatsTable.util = aUtil
         },
         init: function () {
@@ -25,11 +25,11 @@ let StatsTable = (function () {
                 'pageLength': 15,
                 'lengthChange': false,
                 searching: false,
-                "scrollX": true,
+                'scrollX': true,
                 'displayStart': 1,
-                "columnDefs": [{
-                    "targets": [0, 4, 5],
-                    "visible": false
+                'columnDefs': [{
+                    'targets': [0, 4, 5],
+                    'visible': false
                 }],
                 'columns': [
                     {'title': 'PLAYER ID'},
