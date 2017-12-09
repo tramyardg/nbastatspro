@@ -2,6 +2,9 @@ $(document).ready(function () {
     let util = new CommonUtil()
     if (util.givenHrefUseModule("index.php")) {
         SearchActions.init();
+    }
+    if (util.givenHrefUseModule("regular-season.php")) {
+        StatsTable.setUtil(new CommonUtil());
         StatsTable.init();
     }
     if (util.givenHrefUseModule("run.php")) {

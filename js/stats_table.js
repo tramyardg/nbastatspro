@@ -3,6 +3,9 @@ let StatsTable = (function () {
     let fnShowTableData = null
     let fnAddColHeaderTooltip = null
     return {
+        setUtil: function(aUtil) {
+            StatsTable.util = aUtil
+        },
         init: function () {
             table = $('#sortable-stats')
             fnShowTableData = null
@@ -10,16 +13,16 @@ let StatsTable = (function () {
             this.bindStatsTableActions()
         },
         bindStatsTableActions: function () {
-            let playerData = util.readTextFile('data/players_data.json')
+            let playerData = StatsTable.util.readTextFile('data/players_data.json')
             let jsonStr = JSON.parse(playerData)
             $.map(jsonStr, function (data) {
-                data[util.statsHeader.FT_PCT] = (data[util.statsHeader.FT_PCT] * 100).toFixed(1)
-                data[util.statsHeader.FG_PCT] = (data[util.statsHeader.FG_PCT] * 100).toFixed(1)
-                data[util.statsHeader.FG3_PCT] = (data[util.statsHeader.FG3_PCT] * 100).toFixed(1)
+                data[StatsTable.util.statsHeader.FT_PCT] = (data[StatsTable.util.statsHeader.FT_PCT] * 100).toFixed(1)
+                data[StatsTable.util.statsHeader.FG_PCT] = (data[StatsTable.util.statsHeader.FG_PCT] * 100).toFixed(1)
+                data[StatsTable.util.statsHeader.FG3_PCT] = (data[StatsTable.util.statsHeader.FG3_PCT] * 100).toFixed(1)
             })
             $(table).DataTable({
                 data: jsonStr,
-                'pageLength': 5,
+                'pageLength': 15,
                 'lengthChange': false,
                 searching: false,
                 "scrollX": true,
