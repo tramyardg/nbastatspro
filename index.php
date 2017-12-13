@@ -108,7 +108,7 @@
 </div>
 <footer class="footer">
     <div class="container">
-        <p class="text-muted text-center">Copyright © NBAStatsPro.co.nf 2017</p>
+        <p class="text-muted text-center">Copyright © NBAStatsPro 2017</p>
     </div>
 </footer>
 <script src="js/jquery-3.1.1.min.js"></script>

@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: RAYMARTHINKPAD
- * Date: 2017-07-29
- * Time: 12:01 AM
- */
-
 if(isset($_REQUEST["first_name"])) {
 
     if(strlen($_REQUEST["first_name"]) != null){
@@ -15,7 +8,6 @@ if(isset($_REQUEST["first_name"])) {
     }
 
 }
-
 if(isset($_REQUEST["last_name"])) {
     if(strlen($_REQUEST["last_name"]) != null){
         $q_last_name = $_REQUEST["last_name"];
@@ -23,10 +15,8 @@ if(isset($_REQUEST["last_name"])) {
         displayHint($last_names, $q_last_name, "last_name");
     }
 }
-
 function displayHint($array_key, $query_str, $for) {
     $hint = "";
-
     if ($query_str !== "") {
         $query_str = strtolower($query_str);
         $len = strlen($query_str);
@@ -41,17 +31,14 @@ function displayHint($array_key, $query_str, $for) {
             }
         }
     }
-
     if($for == "first_name") {
         $f = "no player with this first name";
     } else {
         $f = "no player with this last name";
     }
-
     // Output "no suggestion" if no hint was found or output correct values
     echo $hint === "" ? $f : $hint;
 }
-
 function bio_data() {
     $data = file_get_contents('../data/bio.json');
     $json_data = json_decode($data, true);
