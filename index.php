@@ -39,7 +39,7 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="index.php">Home</a></li>
-                    <li><a href="regular-season.php">Regular Season</a></li>
+                    <li><a href="regular-season.php">Players</a></li>
                 </ul>
             </div>
         </div>
