@@ -9,7 +9,6 @@
     <meta name="author"
           content="Raymart De Guzman, Software Engineering, Software developer, junior software engineer, developer, engineer, engineering, Java, jQuery, javaScript, PHP">
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
-    <link rel="icon" href="../favicon.ico" type="image/x-icon">
     <title>NBAStatsPro</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -63,7 +62,7 @@
 </div>
 <footer class="footer">
     <div class="container">
-        <p class="text-muted text-center">Copyright © Raymart.ca 2017</p>
+        <p class="text-muted text-center">Copyright © NBAStatsPro.co.nf 2017</p>
     </div>
 </footer>
 <script src="js/jquery-3.1.1.min.js"></script>
