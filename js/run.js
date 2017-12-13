@@ -22,11 +22,9 @@ let RunActions = (function () {
                         if (response.length > 1 && response.length < 40) {
                             util.$warning.empty()
                             util.$warning.append(util.alertMessage('success', 'Done downloading data.'))
-                            console.log('done')
                         } else {
                             util.$warning.empty()
                             util.$warning.append(util.alertMessage('warning', 'There must be an error.'))
-                            console.log('error')
                         }
                     }
                 })

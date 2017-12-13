@@ -45,8 +45,6 @@ function CommonUtil () {
             if (rawFile.readyState === 4) {
                 if (rawFile.status === 200 || rawFile.status === 0) {
                     result = rawFile.responseText
-                    // alert(allText);
-                    // console.log(allText);
                 }
             }
         }
