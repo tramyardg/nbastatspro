@@ -76,7 +76,7 @@ let SearchActions = (function () {
                 })
             }
             fnPlayerStats = function (firstName, lastName) {
-                let jqxhr = $.ajax({
+                const jqxhr_b = $.ajax({
                     url: 'data/players_data.json',
                     dataType: 'json',
                     success: function (data) {
@@ -105,10 +105,10 @@ let SearchActions = (function () {
                         }
                     }
                 })
-                jqxhr.done(function () {
+                jqxhr_b.done(function () {
                     // util.$loading_img.hide();
                 })
-                jqxhr.fail(function () {
+                jqxhr_b.fail(function () {
                     util.$warning.empty()
                     util.$warning.append(util.alertMessage('warning', 'There must be an error. Please try again later.'))
                 })
