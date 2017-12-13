@@ -56,13 +56,10 @@ let SearchActions = (function () {
                             if (elem.fullName === fullName) {
                                 util.$warning.empty()
                                 $(playerCardBox).empty()
-                                $(playerCardBox).append(
-                                    playerCard(
-                                        elem.playerId, elem.firstName, elem.lastName,
-                                        elem.team, elem.position, elem.uniformNumber,
-                                        elem.height, elem.weight, elem.rookieYear
-                                    )
-                                )
+                                $(playerCardBox).append(playerCard(elem.playerId, elem.firstName, elem.lastName,
+                                    elem.team, elem.position, elem.uniformNumber,
+                                    elem.height, elem.weight, elem.rookieYear
+                                ))
                                 $(playerCardBox).show('slow')
                             } else {
 
@@ -101,9 +98,7 @@ let SearchActions = (function () {
                                 ftPct = (data[i][util.statsHeader.FT_PCT]) * 100
                                 team = data[i][util.statsHeader.TEAM]
                                 $(statsCardBox).empty()
-                                $(statsCardBox).append(
-                                    statsCard(ppg, rbg, asg, fgPct, fg3m, ftPct, team)
-                                )
+                                $(statsCardBox).append(statsCard(ppg, rbg, asg, fgPct, fg3m, ftPct, team))
                                 $(statsCardBox).show('slow')
                                 break
                             }
