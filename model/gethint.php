@@ -1,12 +1,10 @@
 <?php
 if(isset($_REQUEST["first_name"])) {
-
     if(strlen($_REQUEST["first_name"]) != null){
         $q_first_name = $_REQUEST["first_name"];
         $first_names = array_column(bio_data(), 'firstName');
         displayHint($first_names, $q_first_name, "first_name");
     }
-
 }
 if(isset($_REQUEST["last_name"])) {
     if(strlen($_REQUEST["last_name"]) != null){
