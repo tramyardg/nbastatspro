@@ -4,6 +4,7 @@ import './App.css';
 import './css/blog.css';
 import AppHeader from "./AppHeader";
 import CallToSearch from "./CallToSearch";
+import SearchForm from './SearchForm';
 import AppFooter from "./AppFooter";
 
 class App extends Component {
@@ -12,6 +13,7 @@ class App extends Component {
         <div className="container">
           <AppHeader />
           <CallToSearch/>
+          <SearchForm/>
           <AppFooter/>
         </div>
     );
