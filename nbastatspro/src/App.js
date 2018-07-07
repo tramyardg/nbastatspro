@@ -7,6 +7,20 @@ import CallToSearch from "./CallToSearch";
 import SearchForm from './SearchForm';
 import AppFooter from "./AppFooter";
 
+/*
+ * App structure:
+ * <App>
+ *   <Header/>
+ *   <CallToSearch/>
+ *   <SearchForm>
+ *     <InputFirstName/> <FirstNameHint/>
+ *     <InputLastName/> <LastNameHint/>
+ *     <SearchButton/>
+ *   <SearchForm/>
+ *   <Footer/>
+ * <App/>
+ * */
+
 class App extends Component {
   render() {
     return (
