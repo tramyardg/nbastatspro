@@ -1,0 +1,26 @@
+.player-profile-container {
+    margin-top: 2em;
+}
+
+.player-profile {
+    padding: 1em;
+    font-size: 14px;
+}
+
+.player-photo {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.player-info-block {
+    line-height: 2em;
+}
+
+.player-info-block span:first-child {
+    font-weight: bold;
+}
+
+.player-info-block span:first-child:after {
+    content: ": ";
+}
