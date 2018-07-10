@@ -8,6 +8,7 @@ import CallToSearch from "./CallToSearch";
 import SearchForm from './SearchForm';
 import PlayerProfile from './PlayerProfile';
 import AppFooter from "./AppFooter";
+import SampleData from "./SampleData";
 
 /*
  * App structure:
@@ -19,6 +20,8 @@ import AppFooter from "./AppFooter";
  *     <InputLastName/> <LastNameHint/>
  *     <SearchButton/>
  *   <SearchForm/>
+ *   <PlayerProfile playerProfileData={SampleData.profile}/>
+ *   <PlayerStats/>
  *   <Footer/>
  * <App/>
  * */
@@ -30,7 +33,7 @@ class App extends Component {
           <AppHeader />
           <CallToSearch/>
           <SearchForm/>
-          <PlayerProfile/>
+          <PlayerProfile playerProfileData={SampleData.profile}/>
           <AppFooter/>
         </div>
     );
