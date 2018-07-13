@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './css/stats.css';
 import StatsPreview from "./StatsPreview";
 import StatsPreviewPlus from "./StatsPreviewPlus";
 

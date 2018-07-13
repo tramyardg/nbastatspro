@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
+import './css/player.css';
 import playerPhoto from './img_template_method_uml.png';
 
 class PlayerProfile extends Component {

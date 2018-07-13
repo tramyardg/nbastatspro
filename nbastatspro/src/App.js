@@ -2,8 +2,6 @@ import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import './css/blog.css';
-import './css/player.css';
-import './css/stats.css';
 import AppHeader from "./AppHeader";
 import CallToSearch from "./CallToSearch";
 import SearchForm from './SearchForm';
