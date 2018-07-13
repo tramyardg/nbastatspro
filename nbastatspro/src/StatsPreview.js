@@ -11,3 +11,5 @@ class StatsPreview extends Component {
     )
   }
 }
+
+export default StatsPreview;

@@ -9,7 +9,7 @@ class PlayerProfile extends Component {
       return (
           <div className="player-profile-container" key={index}>
             <h2>{row.name}<span>'s</span> Profile</h2>
-            <div className="container player-profile box-rounded">
+            <div className="container player-profile">
               <div className="row align-items-start">
                 <div className="col-sm-4">
                   <img src={playerPhoto} className="player-photo" alt="player photo"/>

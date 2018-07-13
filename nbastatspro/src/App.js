@@ -3,10 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 import './css/blog.css';
 import './css/player.css';
+import './css/stats.css';
 import AppHeader from "./AppHeader";
 import CallToSearch from "./CallToSearch";
 import SearchForm from './SearchForm';
 import PlayerProfile from './PlayerProfile';
+import StatsTab from './StatsTab';
 import AppFooter from "./AppFooter";
 import SampleData from "./SampleData";
 
@@ -33,7 +35,10 @@ class App extends Component {
           <AppHeader />
           <CallToSearch/>
           <SearchForm/>
-          <PlayerProfile playerProfileData={SampleData.profile}/>
+          <div className="box-rounded  mt-3 p-3">
+            <PlayerProfile playerProfileData={SampleData.profile}/>
+            <StatsTab/>
+          </div>
           <AppFooter/>
         </div>
     );
