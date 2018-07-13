@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import StatsPreview from "./StatsPreview";
+import StatsPreviewPlus from "./StatsPreviewPlus";
 
 class StatsTab extends Component {
   render() {
@@ -7,12 +9,16 @@ class StatsTab extends Component {
         <div className="stats-tab">
           <ul className="nav nav-tabs">
             <li className="nav-item">
-              <a className="nav-link active" href="#preview">Preview</a>
+              <a className="nav-link active" href="#preview" role="tab" data-toggle="tab">Preview</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#more">More</a>
+              <a className="nav-link" href="#more" role="tab" data-toggle="tab">More</a>
             </li>
           </ul>
+          <div className="tab-content">
+            <StatsPreview/>
+            <StatsPreviewPlus/>
+          </div>
         </div>
     )
   }

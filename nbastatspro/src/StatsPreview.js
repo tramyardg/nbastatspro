@@ -7,7 +7,7 @@ import React, {Component} from 'react';
 class StatsPreview extends Component {
   render() {
     return (
-        <div></div>
+        <div role="tabpanel" className="tab-pane active" id="preview">Stats preview</div>
     )
   }
 }
