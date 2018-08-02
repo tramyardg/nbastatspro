@@ -5,7 +5,6 @@ import StatsPreviewPlus from "./StatsPreviewPlus";
 
 class StatsTab extends Component {
   render() {
-    // contains StatsPreview + StatsPreviewPlus
     return (
         <div className="stats-tab">
           <ul className="nav nav-tabs">
