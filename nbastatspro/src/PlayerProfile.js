@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import './css/player.css';
-// import playerPhoto from './img_template_method_uml.png';
 
 class PlayerProfile extends Component {
   constructor(props) {
@@ -14,16 +13,8 @@ class PlayerProfile extends Component {
       age: 0,
       height: 0,
       weight: 0,
-      nationality: ''
+      country: ''
     }
-  }
-
-  componentDidMount() {
-    const apiUrl = 'http://stats.nba.com/stats/commonplayerinfo?LeagueID=00&PlayerID=201566&SeasonType=Regular+Season';
-    fetch(apiUrl)
-        .then(response => response)
-        .then(contents => console.log(contents))
-        .catch(() => console.log("Can’t access " + apiUrl + " response. Blocked by browser?"))
   }
 
   render() {
@@ -69,7 +60,7 @@ class PlayerProfile extends Component {
                 </div>
                 <div className="player-info-block">
                   <span>Nationality</span>
-                  <span>{this.state.nationality}</span>
+                  <span>{this.state.country}</span>
                 </div>
               </div>
             </div>

@@ -4,7 +4,7 @@ import './App.css';
 import './css/blog.css';
 import AppHeader from "./AppHeader";
 import CallToSearch from "./CallToSearch";
-import SearchForm from './search/SearchForm';
+import SearchForm from './SearchForm';
 import PlayerProfile from './PlayerProfile';
 import StatsTab from './StatsTab';
 import AppFooter from "./AppFooter";

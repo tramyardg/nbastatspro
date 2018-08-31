@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import FormInput from '../components/FormInput';
+import FormInput from './components/FormInput';
 
 class SearchForm extends Component {
   constructor(props) {
